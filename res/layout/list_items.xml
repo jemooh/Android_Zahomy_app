@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/topitems"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zmy.zahomy.src.MainZahomyActivity$ListItemsFragment" >
+
+    <com.zmy.zahomy_app.widget.ItemsListView
+        android:id="@+id/todayListView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tDateToday"
+        android:cacheColorHint="@android:color/transparent"
+        android:fadingEdge="vertical" />
+
+   <ProgressBar
+        android:id="@+id/pbppl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@xml/progress" />
+    
+	
+
+    <TextView
+        android:id="@+id/progressMsg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pbppl"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Loading  Items"
+        android:textSize="10sp"
+        android:textColor="@color/less_grey" />
+
+
+     <LinearLayout
+            android:id="@+id/tDateToday"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/rati_gry"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/txtDateToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/black_bg"
+                android:textColorHint="@color/c1"
+                android:textSize="11dp" />
+            </LinearLayout>
+
+</RelativeLayout>

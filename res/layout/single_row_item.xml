@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <ProgressBar
+        android:id="@+id/imgPb"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="32dp" />
+
+    <ImageView
+        android:id="@+id/itemsImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/textView1"
+        android:src="@drawable/abc_ab_bottom_solid_light_holo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="1dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/itemsImage"
+        android:background="@color/light_gry" />
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPhoneNo"
+        android:layout_alignTop="@+id/imgPb"
+        android:text="Ngara"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/dark_grey"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/txtclient_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView4"
+        android:layout_toRightOf="@+id/imageView5"
+        android:text="Joel Kipchirchir"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:src="@drawable/phone" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toLeftOf="@+id/txtLocation"
+        android:src="@drawable/locations" />
+
+    <TextView
+        android:id="@+id/txtPhoneNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView6"
+        android:layout_toRightOf="@+id/imageView6"
+        android:text="+254700990099"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/orange"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPhoneNo"
+        android:layout_alignBottom="@+id/txtPhoneNo"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:text="8:30PM"
+        android:textSize="11sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtclient_name"
+        android:src="@drawable/navigation_next_item" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/txtclient_name"
+        android:layout_toLeftOf="@+id/txtLocation"
+        android:src="@drawable/person" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignRight="@+id/txtTime"
+        android:layout_alignTop="@+id/imageView1"
+        android:src="@drawable/check" />
+
+</RelativeLayout>

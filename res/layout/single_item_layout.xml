@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true" >
+		<LinearLayout 
+		    android:id="@+id/single_item_layout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:background="@color/light_gry"
+		    android:orientation="vertical"
+		    android:padding="5dp" >
+
+			<RelativeLayout
+			    android:id="@+id/relativeLayout2"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:background="@drawable/round_corners_bg"
+			    android:paddingLeft="5dp"
+			    android:paddingRight="5dp"
+			    android:paddingTop="5dp" >
+
+			    <ImageView
+			        android:id="@+id/imageViewItem"
+			        android:layout_width="180dp"
+			        android:layout_height="150dp"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:layout_marginTop="24dp"
+			        android:background="@drawable/round_corners_stroke_bg"
+			        android:src="@drawable/currenman" />
+
+			    <TextView
+			        android:id="@+id/TextView02"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:text="Item"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textSize="11sp" />
+
+			    <TextView
+			        android:id="@+id/TextView01"
+			        android:layout_width="wrap_content"
+			        android:layout_height="1dp"
+			        android:layout_alignBottom="@+id/TextView02"
+			        android:layout_alignLeft="@+id/TextView02"
+			        android:layout_alignParentRight="true"
+			        android:background="@color/light_gry"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="@color/light_gry" />
+
+			    <TextView
+			        android:id="@+id/txtTime"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignBottom="@+id/TextView01"
+			        android:layout_alignRight="@+id/TextView01"
+			        android:text="8:30PM"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textSize="11sp" />
+
+			    <TextView
+			        android:id="@+id/txtPrice"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignLeft="@+id/txtItemName"
+			        android:layout_below="@+id/txtItemName"
+			        android:layout_marginTop="15dp"
+			        android:text="Kshs 24,500"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="@color/orange"
+			        android:textColorHint="@color/orange"
+			        android:textSize="12sp" />
+
+			    <TextView
+			        android:id="@+id/txtItemName"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignLeft="@+id/imageViewItem"
+			        android:layout_below="@+id/imageViewItem"
+			        android:text="Medium Text"
+			        android:textAppearance="?android:attr/textAppearanceMedium"
+			        android:textColor="@color/black_bg"
+			        android:textSize="14sp" />
+
+			    <TextView
+			        android:id="@+id/TextView03"
+			        android:layout_width="wrap_content"
+			        android:layout_height="1dp"
+			        android:layout_alignBottom="@+id/txtPrice"
+			        android:layout_alignLeft="@+id/txtPrice"
+			        android:layout_alignRight="@+id/TextView01"
+			        android:background="@color/orange"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="@color/light_gry" />
+
+			    <ImageView
+			        android:id="@+id/imageView1"
+			        android:layout_width="30dp"
+			        android:layout_height="30dp"
+			        android:layout_alignTop="@+id/imageViewItem"
+			        android:layout_marginLeft="4dp"
+			        android:layout_toRightOf="@+id/imageViewItem"
+			        android:src="@drawable/person" />
+
+			    <TextView
+			        android:id="@+id/textView1"
+			        android:layout_width="1dp"
+			        android:layout_height="30dp"
+			        android:layout_alignTop="@+id/imageView1"
+			        android:layout_toRightOf="@+id/imageView1"
+			        android:background="@color/light_gry"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="@color/light_gry" />
+
+			    <TextView
+			        android:id="@+id/txtClientName"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignBottom="@+id/textView1"
+			        android:layout_marginLeft="2dp"
+			        android:layout_toRightOf="@+id/textView1"
+			        android:text="Joel Kiptoo"
+			        android:textAppearance="?android:attr/textAppearanceSmall"
+			        android:textColor="@color/grey_bg"
+			        android:textSize="15sp" />
+
+			</RelativeLayout>
+		
+		        <RelativeLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@color/rati_gry"
+		            android:padding="5dp" >
+
+		            <ImageButton
+		                android:id="@+id/clear"
+		                android:layout_width="80dp"
+		                android:layout_height="40dp"
+		                android:layout_alignParentRight="true"
+		                android:layout_alignParentTop="true"
+		                android:background="@drawable/btn_press_blue_bg"
+		                android:minHeight="40dp"
+		                android:onClick="onClickShare"
+		                android:src="@drawable/content_undo"
+		                android:textColor="#000000" />
+
+		            <TextView
+		                android:id="@+id/textViewPlz"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignBottom="@+id/clear"
+		                android:layout_alignParentLeft="true"
+		                android:text="Please sign below......"
+		                android:textAppearance="?android:attr/textAppearanceMedium"
+		                android:textSize="12sp" />
+		
+		        </RelativeLayout>
+		
+		        <LinearLayout
+		            android:id="@+id/linearLayout"
+		            android:layout_width="match_parent"
+		            android:layout_height="70dp"
+		            android:orientation="vertical" >
+		            
+		        </LinearLayout>
+		
+		        <RelativeLayout
+		            android:id="@+id/relativeLayout1"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:background="@drawable/round_corners_bg"
+		            android:padding="5dp" >
+		
+		            <TextView
+		                android:id="@+id/t"
+		                android:layout_width="wrap_content"
+		                android:layout_height="1dp"
+		                android:layout_alignLeft="@+id/txtStatus"
+		                android:layout_alignParentRight="true"
+		                android:layout_below="@+id/txtStatus"
+		                android:background="@color/light_gry"
+		                android:textAppearance="?android:attr/textAppearanceSmall"
+		                android:textColor="@color/light_gry" />
+		
+		            <TextView
+		                android:id="@+id/txtStatus"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignLeft="@+id/relativeLayout3"
+		                android:layout_alignParentTop="true"
+		                android:text="Status"
+		                android:textAppearance="?android:attr/textAppearanceSmall"
+		                android:textSize="11sp" />
+		
+		            <RelativeLayout
+		                android:id="@+id/relativeLayout3"
+		                android:layout_width="match_parent"
+		                android:layout_height="50dp"
+		                android:layout_below="@+id/t"
+		                android:layout_centerHorizontal="true"
+		                android:background="@drawable/round_corners_bg"
+		                android:padding="5dp" >
+		
+		                <Button
+		                    android:id="@+id/btnfeedback"
+		                    style="?android:attr/buttonStyleSmall"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="40dp"
+		                    android:layout_alignParentBottom="true"
+		                    android:layout_alignParentRight="true"
+		                    android:background="@drawable/btn_press_blue_bg"
+		                    android:padding="10dp"
+		                    android:text="Feedback"
+		                    android:textSize="13sp" />
+		
+		                <Button
+		                    android:id="@+id/btnCan"
+		                    style="?android:attr/buttonStyleSmall"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="40dp"
+		                    android:layout_alignBaseline="@+id/btnfeedback"
+		                    android:layout_alignBottom="@+id/btnfeedback"
+		                    android:layout_centerHorizontal="true"
+		                    android:background="@drawable/btn_press_blue_bg"
+		                    android:padding="10dp"
+		                    android:text="Canceled"
+		                    android:textSize="13sp" />
+		
+		                <Button
+		                    android:id="@+id/btnDel"
+		                    style="?android:attr/buttonStyleSmall"
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="40dp"
+		                    android:layout_alignBaseline="@+id/btnCan"
+		                    android:layout_alignBottom="@+id/btnCan"
+		                    android:layout_alignParentLeft="true"
+		                    android:background="@drawable/btn_press_blue_bg"
+		                    android:padding="10dp"
+		                    android:text="Delivered"
+		                    android:textSize="13sp" />
+		
+		            </RelativeLayout>
+		
+		        </RelativeLayout>
+		
+		</LinearLayout>
+</ScrollView>		
+		

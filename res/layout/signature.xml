@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/rati_gry"
+    android:orientation="vertical"
+    android:padding="5dp" >
+		<!-- 
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/rati_gry"
+		        android:padding="5dp" >
+		
+		   
+		        <ImageButton
+		            android:id="@+id/getsign"
+		            android:layout_width="80dp"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentRight="true"
+		            android:layout_alignParentTop="true"
+		            android:background="@drawable/btn_press_blue_bg"
+		            android:minHeight="40dp"
+		            android:onClick="onClickSave"
+		            android:textColor="#000000"
+		            android:src="@drawable/navigation_accept" />
+		
+		        <ImageButton
+		            android:id="@+id/clear"
+		            android:layout_width="80dp"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_centerHorizontal="true"
+		            android:background="@drawable/btn_press_blue_bg"
+		            android:minHeight="40dp"
+		            android:textSize="12sp"
+		            android:onClick="onClickShare"
+		            android:textColor="#000000"
+		            android:src="@drawable/content_undo" />
+		
+		        <ImageButton
+		            android:id="@+id/cancel"
+		            android:layout_width="80dp"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:background="@drawable/btn_press_blue_bg"
+		            android:minHeight="40dp"
+		            android:textSize="12sp"
+		            android:onClick="onClickCancel"
+		            android:textColor="#000000"
+		            android:src="@drawable/content_remove" />
+		
+		    </RelativeLayout>
+		    
+		    
+		    <RelativeLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@color/rati_gry"
+		        android:padding="5dp" >
+
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Please sign below..."
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+		        
+		        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+        
+        
+    </LinearLayout>
+-->
+</LinearLayout>
